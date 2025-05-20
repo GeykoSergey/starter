@@ -1,0 +1,29 @@
+@media (min-width: 992px) {
+  .offcanvas-lg .offcanvas-header {
+    display: block;
+  }
+
+  .btn-close {
+    display: none;
+  }
+  // .offcanvas-lg .offcanvas-body {
+  //   display: flex;
+  //   flex-grow: 0;
+  //   padding: 0;
+  //   overflow-y: visible;
+  //   background-color: transparent !important;
+  // }
+}
+
+.catalog {
+  .accordion {
+    --bs-accordion-active-bg: #fff;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-btn-icon-width: 1rem;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='40px' viewBox='0 -960 960 960' width='40px' fill='%23000000'%3E%3Cpath d='M286.67-224.67 240-271.33l240-240 240 240-46.67 46.66-193.33-193-193.33 193Zm0-248.66L240-520l240-240 240 240-46.67 46.67-193.33-193-193.33 193Z'/%3E%3C/svg%3E");
+  }
+
+  .accordion-item {
+    border: none;
+  }
+}
