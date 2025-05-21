@@ -16,3 +16,4 @@ import "./components/slider.js";
 // import "./components/bs.js";
 // import "./components/test.js";
 import "./components/main.js";
+import "./components/validate-forms.js";

@@ -1,10 +1,17 @@
 <!-- Hero Section -->
 <section id="hero" class="hero section dark-background">
-  <img
-    class="full-screen__img"
-    src="img/hero.jpg"
-    alt="Image of a diver"
-  />
+  <!-- <img class="full-screen__img" src="img/hero.jpg" alt="Image of a diver" /> -->
+  <picture>
+    <source srcset="img/hero.webp" type="image/webp" />
+    <img
+      src="img/hero.jpg"
+      class="full-screen__img"
+      loading="lazy"
+      width="1920"
+      height="1076"
+      alt="Image of a diver"
+    />
+  </picture>
 
   <div class="container d-flex flex-column align-items-center">
     <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
@@ -12,14 +19,22 @@
       We are team of talented designers making websites with Bootstrap
     </p>
     <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-      <a href="#about" class="btn-get-started  d-flex align-items-center">Get Started</a>
+      <a href="#about" class="btn-get-started d-flex align-items-center"
+        >Get Started</a
+      >
       <a
         href="https://youtu.be/-09ArPBsBAo?si=aFi2lg5dI3WieJqW&t=12"
         class="glightbox btn-watch-video d-flex align-items-center"
         data-gallery="hero-video"
         aria-label="Watch video"
       >
-        <svg class="icon-watch-video" viewBox="0 0 24 24" width="24px" height="24px" aria-hidden="true">
+        <svg
+          class="icon-watch-video"
+          viewBox="0 0 24 24"
+          width="24px"
+          height="24px"
+          aria-hidden="true"
+        >
           <use xlink:href="img/sprite.svg#play_circle"></use>
         </svg>
         <span>Watch Video</span>

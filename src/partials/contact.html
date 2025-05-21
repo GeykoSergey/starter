@@ -7,6 +7,29 @@
   </div>
   <!-- End Section Title -->
 
+  <div class="container">
+    <div id="map">
+      <iframe
+        src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="360px"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10624.608309387384!2d-81.24245473290529!3d19.286905558092183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sua!4v1747829966504!5m2!1sru!2sua"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+
   <div class="container" data-aos="fade-up" data-aos-delay="100">
     <div class="row gy-4">
       <div class="col-lg-6">
@@ -115,6 +138,47 @@
       </div>
       <!-- End Contact Form -->
     </div>
+  </div>
+
+  <div class="container">
+    <form
+      class="form container my-4"
+      method="POST"
+      action="mail.php"
+      novalidate
+    >
+      <div class="mb-3">
+        <label for="name" class="form-label">Имя</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control input-name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="tel" class="form-label">Телефон</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          class="form-control input-tel"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control input-email"
+          required
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
   </div>
 </section>
 <!-- /Contact Section -->
