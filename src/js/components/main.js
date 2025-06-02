@@ -4,16 +4,21 @@ import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 import Swiper from "swiper";
 
-/**
- * Initiate glightbox
- */
+const windowEl = window;
+const documentEl = document;
+const htmlEl = document.documentElement;
+const bodyEl = document.body;
+
+// -------------------------------------------
+// Initiate glightbox
+// -------------------------------------------
 const glightbox = GLightbox({
   selector: ".glightbox",
 });
 
-/**
- * Init isotope layout and filters
- */
+// -------------------------------------------
+// Init isotope layout and filters
+// -------------------------------------------
 document.querySelectorAll(".isotope-layout").forEach(function (isotopeItem) {
   let layout = isotopeItem.getAttribute("data-layout") ?? "masonry";
   let filter = isotopeItem.getAttribute("data-default-filter") ?? "*";
@@ -51,9 +56,9 @@ document.querySelectorAll(".isotope-layout").forEach(function (isotopeItem) {
     });
 });
 
-// ****************************************************
+// -------------------------------------------
 // Preloader
-// ****************************************************
+// -------------------------------------------
 const preloader = document.querySelector("#preloader");
 if (preloader) {
   window.addEventListener("load", () => {
@@ -61,22 +66,29 @@ if (preloader) {
   });
 }
 
-/**
- * Apply .scrolled class to the body as the page is scrolled down
- */
+// -------------------------------------------
+// Apply .scrolled class to the body as the page is scrolled down
+// -------------------------------------------
 function toggleScrolled() {
-  const selectBody = document.querySelector('body');
-  const selectHeader = document.querySelector('#header');
-  if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
-  window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+  const selectBody = document.querySelector("body");
+  const selectHeader = document.querySelector("#header");
+  if (
+    !selectHeader.classList.contains("scroll-up-sticky") &&
+    !selectHeader.classList.contains("sticky-top") &&
+    !selectHeader.classList.contains("fixed-top")
+  )
+    return;
+  window.scrollY > 100
+    ? selectBody.classList.add("scrolled")
+    : selectBody.classList.remove("scrolled");
 }
 
-document.addEventListener('scroll', toggleScrolled);
-window.addEventListener('load', toggleScrolled);
+document.addEventListener("scroll", toggleScrolled);
+window.addEventListener("load", toggleScrolled);
 
-/**
- * Scroll top button
- */
+// -------------------------------------------
+// Scroll top button
+// -------------------------------------------
 let scrollTop = document.querySelector(".scroll-top");
 
 function toggleScrollTop() {
@@ -109,12 +121,14 @@ document
     // document.querySelector('body').classList.toggle('mobile-nav-active');
   });
 
-
+// -------------------------------------------
 // Initiate Pure Counter
+// -------------------------------------------
 new PureCounter();
 
-
+// -------------------------------------------
 // Init swiper sliders
+// -------------------------------------------
 function initSwiper() {
   document.querySelectorAll(".init-swiper").forEach(function (swiperElement) {
     let config = JSON.parse(
@@ -131,4 +145,54 @@ function initSwiper() {
 
 window.addEventListener("load", initSwiper);
 
+// -------------------------------------------
+// Multilevel Dropdown
+// -------------------------------------------
 
+// function multilevelDropdown() {
+//   const dropdownToggles = document.querySelectorAll(
+//     ".dropdown-menu [data-bs-toggle='dropdown']"
+//   );
+
+// dropdownToggles.forEach((toggle) => {
+//   toggle.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     e.stopPropagation();
+
+//     const submenu = this.nextElementSibling;
+
+// Закрыть другие открытые подменю на этом уровне
+// const parentMenu = this.closest(".dropdown-menu");
+// const openSubmenus = parentMenu.querySelectorAll(".dropdown-menu.show");
+
+// openSubmenus.forEach((menu) => {
+//   if (menu !== submenu) {
+//     menu.classList.remove("show");
+//   }
+// });
+
+// Переключить текущее подменю
+// if (submenu && submenu.classList.contains("dropdown-menu")) {
+//   submenu.classList.toggle("show");
+//   console.log("show");
+
+// Закрыть все подменю при закрытии основного dropdown
+//         const parentDropdown = this.closest(".dropdown");
+//         if (parentDropdown) {
+//           parentDropdown.addEventListener(
+//             "hide.bs.dropdown",
+//             function () {
+//               const submenus = parentDropdown.querySelectorAll(
+//                 ".dropdown-menu.show"
+//               );
+//               submenus.forEach((sub) => sub.classList.remove("show"));
+//             },
+//             { once: true }
+//           );
+//         }
+//       }
+//     });
+//   });
+// }
+
+// document.addEventListener("DOMContentLoaded", multilevelDropdown);
