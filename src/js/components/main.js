@@ -4,10 +4,10 @@ import Isotope from "isotope-layout";
 import imagesLoaded from "imagesloaded";
 import Swiper from "swiper";
 
-const windowEl = window;
-const documentEl = document;
-const htmlEl = document.documentElement;
-const bodyEl = document.body;
+// const windowEl = window;
+// const documentEl = document;
+// const htmlEl = document.documentElement;
+// const bodyEl = document.body;
 
 // -------------------------------------------
 // Initiate glightbox
@@ -144,55 +144,3 @@ function initSwiper() {
 }
 
 window.addEventListener("load", initSwiper);
-
-// -------------------------------------------
-// Multilevel Dropdown
-// -------------------------------------------
-
-// function multilevelDropdown() {
-//   const dropdownToggles = document.querySelectorAll(
-//     ".dropdown-menu [data-bs-toggle='dropdown']"
-//   );
-
-// dropdownToggles.forEach((toggle) => {
-//   toggle.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     e.stopPropagation();
-
-//     const submenu = this.nextElementSibling;
-
-// Закрыть другие открытые подменю на этом уровне
-// const parentMenu = this.closest(".dropdown-menu");
-// const openSubmenus = parentMenu.querySelectorAll(".dropdown-menu.show");
-
-// openSubmenus.forEach((menu) => {
-//   if (menu !== submenu) {
-//     menu.classList.remove("show");
-//   }
-// });
-
-// Переключить текущее подменю
-// if (submenu && submenu.classList.contains("dropdown-menu")) {
-//   submenu.classList.toggle("show");
-//   console.log("show");
-
-// Закрыть все подменю при закрытии основного dropdown
-//         const parentDropdown = this.closest(".dropdown");
-//         if (parentDropdown) {
-//           parentDropdown.addEventListener(
-//             "hide.bs.dropdown",
-//             function () {
-//               const submenus = parentDropdown.querySelectorAll(
-//                 ".dropdown-menu.show"
-//               );
-//               submenus.forEach((sub) => sub.classList.remove("show"));
-//             },
-//             { once: true }
-//           );
-//         }
-//       }
-//     });
-//   });
-// }
-
-// document.addEventListener("DOMContentLoaded", multilevelDropdown);

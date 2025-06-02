@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-  <!-- <head>
+  <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#111111" />
-  <title>Diving Club</title>
-  <link rel="stylesheet" href="css/vendor.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <script defer src="js/main.js"></script>
-</head> -->
-
-<head>
-  <meta charset="UTF-8" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-  <title>Diving Club — Клуб подводного плавания</title>
+  <title>Title</title>
+  <!-- SEO Meta Tags-->
   <meta
     name="description"
-    content="Погрузись в мир дайвинга с клубом Глуба. Курсы, погружения, путешествия. Дайвинг для новичков и профи."
+    content="Погрузись в мир дайвинга. Курсы, погружения, путешествия. Дайвинг для новичков и профи."
   />
   <meta
     name="keywords"
     content="дайвинг, diving, клуб, обучение, море, сертификат PADI, глубоководное погружение"
   />
-  <meta name="author" content="Diving Club Глуба" />
+  <meta name="author" content="Diving Club" />
+  <!-- Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Favicon and Touch Icons-->
+  <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+  <link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="shortcut icon" href="favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Diving Club" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
 
-  <!-- Цвет вкладки -->
-  <meta name="theme-color" content="#0d6efd" />
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
-  <!-- Preload (шрифт, CSS, иконки если есть) -->
   <link
     rel="preload"
     href="fonts/montserrat/Montserrat-Regular.woff2"
@@ -44,23 +33,23 @@
     type="font/woff2"
     crossorigin
   />
-  <link rel="preload" href="css/vendor.css" as="style" />
-  <link rel="preload" href="css/main.css" as="style" />
+  <link
+    rel="preload"
+    href="css/vendor.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript><link rel="stylesheet" href="css/vendor.css" /></noscript>
 
-  <!-- Стили -->
-  <link rel="stylesheet" href="css/vendor.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <link
+    rel="preload"
+    href="css/main.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript><link rel="stylesheet" href="css/main.css" /></noscript>
 
-  <!-- Скрипты -->
   <script defer src="js/main.js"></script>
-
-  <!-- Open Graph для соцсетей (по желанию) -->
-  <!--
-  <meta property="og:title" content="Diving Club — Погружения и обучение">
-  <meta property="og:description" content="Погрузись с нами в подводный мир!">
-  <meta property="og:image" content="/img/og-image.jpg">
-  <meta property="og:type" content="website">
-  -->
 </head>
 
   <body class="page__body" data-bs-spy="scroll" data-bs-target="#navbar-example">
@@ -236,9 +225,9 @@
 <section id="hero" class="hero section dark-background">
   <!-- <img class="full-screen__img" src="img/hero.jpg" alt="Image of a diver" /> -->
   <picture>
-    <source srcset="img/hero.webp" type="image/webp" />
+    <source srcset="img/remove.webp" type="image/webp" />
     <img
-      src="img/hero.jpg"
+      src="img/remove.jpg"
       class="full-screen__img"
       loading="lazy"
       width="1920"
@@ -288,7 +277,7 @@
   <!-- End Section Title -->
   <div class="container mb-5">
     <div class="position-relative mt-4">
-      <img src="img/about_us.jpg" class="img-fluid rounded-4" alt="" />
+      <img src="img/remove.jpg" class="img-fluid rounded-4" alt="" />
       <a
         href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
         class="glightbox pulsating-play-btn"
@@ -302,7 +291,7 @@
       <div class="col-md-6">
         <div class="h-100 overflow-hidden rounded">
           <img
-            src="img/about_us.jpg"
+            src="img/remove.jpg"
             alt="Dive"
             class="img-fluid h-100 w-100 object-fit-cover"
           />
@@ -316,7 +305,7 @@
         <ul>
           <li class="row">
             <div class="col-2">
-              <img src="img/insurance_policy.png" alt="Image" />
+              <img src="img/remove.jpg" alt="Image" />
             </div>
             <div class="col-10">
               <h5>Опытные инструкторы</h5>
@@ -328,7 +317,7 @@
           </li>
           <li class="row">
             <div class="col-2">
-              <img src="img/insurance_policy.png" alt="Image" />
+              <img src="img/remove.jpg" alt="Image" />
             </div>
             <div class="col-10">
               <h5>Опытные инструкторы</h5>
@@ -340,7 +329,7 @@
           </li>
           <li class="row">
             <div class="col-2">
-              <img src="img/insurance_policy.png" alt="Image" />
+              <img src="img/remove.jpg" alt="Image" />
             </div>
             <div class="col-10">
               <h5>Опытные инструкторы</h5>
@@ -371,13 +360,13 @@
         <div class="stats-item d-flex align-items-center w-100 h-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="32px"
+            height="24px"
             viewBox="0 -960 960 960"
-            width="32px"
+            width="24px"
             fill="#1f1f1f"
           >
             <path
-              d="M479.93-330.77q44.22 0 78.84-26.58 34.61-26.57 50.46-67.73H350.77q15.85 41.16 50.39 67.73 34.55 26.58 78.77 26.58Zm-92.15-150.77q21.84 0 37.03-15.28Q440-512.1 440-533.94q0-21.83-15.28-37.02-15.29-15.19-37.12-15.19t-37.02 15.28q-15.19 15.28-15.19 37.11 0 21.84 15.28 37.03 15.28 15.19 37.11 15.19Zm184.62 0q21.83 0 37.02-15.28 15.19-15.28 15.19-37.12 0-21.83-15.28-37.02-15.28-15.19-37.11-15.19-21.84 0-37.03 15.28Q520-555.59 520-533.76q0 21.84 15.28 37.03 15.29 15.19 37.12 15.19ZM315-690.15l108.15-141.93q10.77-14.41 25.58-21.16Q463.54-860 480-860t31.27 6.76q14.81 6.75 25.58 21.16L645-690.15l165.38 55.84q23.7 7.62 36.96 26.87 13.27 19.26 13.27 42.54 0 10.75-3.14 21.43T847.15-523L739.46-373.54l4 158.62q1 31.59-20.83 53.25Q700.81-140 671.77-140q-.85 0-20.08-2.62L480-191.85l-171.69 49.23q-5 2-10.32 2.31-5.32.31-9.76.31-29.31 0-51-21.67-21.69-21.66-20.69-53.25l4-159.62L113.46-523q-7.18-9.83-10.32-20.55Q100-554.28 100-565q0-22.63 13.18-42.09 13.18-19.46 36.82-27.6l165-55.46Zm37.08 51.69-182.85 60.92q-5.77 1.92-7.88 7.89-2.12 5.96 1.73 10.96l117.84 166.31-4.38 178.69q-.39 6.54 4.61 10.38 5 3.85 11.16 1.93L480-254.08l187.69 53.7q6.16 1.92 11.16-1.93 5-3.84 4.61-10.38l-4.38-179.69 117.84-164.31q3.85-5 1.73-10.96-2.11-5.97-7.88-7.89l-182.85-62.92-118.3-156.15q-3.47-5.01-9.62-5.01-6.15 0-9.62 5.01l-118.3 156.15ZM480-499.62Z"
+              d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"
             />
           </svg>
           <div>
@@ -445,78 +434,6 @@
 </section>
 <!-- /Stats Section -->
 
-        <section class="pricing">
-  <div class="container">
-    <div class="pricing__container">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Pricing<br /></p>
-      </div>
-      <!-- End Section Title -->
-      <ul class="pricing__list">
-        <li class="pricing__item">
-          <div class="pricing__card pricing-card">
-            <div class="pricing-card__image ratio ratio-16x9">
-              <img
-                class="pricing-card__img"
-                src="img/about_us.jpg"
-                alt="Image of a diver"
-              />
-            </div>
-            <div class="pricing-card__body">
-              <h5 class="pricing-card__title">Card title</h5>
-              <p class="pricing-card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li>
-        <li class="pricing__item">
-          <div class="pricing__card pricing-card">
-            <div class="pricing-card__image ratio ratio-16x9">
-              <img
-                class="pricing-card__img"
-                src="img/about_us.jpg"
-                alt="Image of a diver"
-              />
-            </div>
-            <div class="pricing-card__body">
-              <h5 class="pricing-card__title">Card title</h5>
-              <p class="pricing-card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li>
-        <li class="pricing__item">
-          <div class="pricing__card pricing-card">
-            <div class="pricing-card__image ratio ratio-16x9">
-              <img
-                class="pricing-card__img"
-                src="img/about_us.jpg"
-                alt="Image of a diver"
-              />
-            </div>
-            <div class="pricing-card__body">
-              <h5 class="pricing-card__title">Card title</h5>
-              <p class="pricing-card__text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card’s content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
         <section class="news">
   <div class="container">
     <div class="news__container">
@@ -530,27 +447,27 @@
         <button
           class="btn-reset news-slider__btn news-slider__btn--prev"
           aria-label="Перейти к предыдущему слайду"
-        ></button>
+        ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg></button>
         <button
           class="btn-reset news-slider__btn news-slider__btn--next"
           aria-label="Перейти к следующему слайду"
-        ></button>
+        ><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m226-559 78 33q14-28 29-54t33-52l-56-11-84 84Zm142 83 114 113q42-16 90-49t90-75q70-70 109.5-155.5T806-800q-72-5-158 34.5T492-656q-42 42-75 90t-49 90Zm178-65q-23-23-23-56.5t23-56.5q23-23 57-23t57 23q23 23 23 56.5T660-541q-23 23-57 23t-57-23Zm19 321 84-84-11-56q-26 18-52 32.5T532-299l33 79Zm313-653q19 121-23.5 235.5T708-419l20 99q4 20-2 39t-20 33L538-80l-84-197-171-171-197-84 167-168q14-14 33.5-20t39.5-2l99 20q104-104 218-147t235-24ZM157-321q35-35 85.5-35.5T328-322q35 35 34.5 85.5T327-151q-25 25-83.5 43T82-76q14-103 32-161.5t43-83.5Zm57 56q-10 10-20 36.5T180-175q27-4 53.5-13.5T270-208q12-12 13-29t-11-29q-12-12-29-11.5T214-265Z"/></svg></button>
       </div>
       <div class="swiper news-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="news-slider__img">
-              <img src="./img/neom-1.jpg" alt="" />
+              <img src="img/remove.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="news-slider__img">
-              <img src="./img/neom-1.jpg" alt="" />
+              <img src="img/remove.jpg" alt="" />
             </div>
           </div>
           <div class="swiper-slide">
             <div class="news-slider__img">
-              <img src="./img/neom-3.jpg" alt="" />
+              <img src="img/remove.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -651,32 +568,15 @@
   <div class="container" data-aos="fade-up">
     <div class="row gy-4">
       <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-1.png" class="img-fluid" alt="" />
+        <img src="img/remove.jpg" class="img-fluid" alt="" />
       </div>
       <!-- End Client Item -->
-
       <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-2.png" class="img-fluid" alt="" />
+        <img src="img/remove.jpg" class="img-fluid" alt="" />
       </div>
       <!-- End Client Item -->
-
       <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-3.png" class="img-fluid" alt="" />
-      </div>
-      <!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-4.png" class="img-fluid" alt="" />
-      </div>
-      <!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-5.png" class="img-fluid" alt="" />
-      </div>
-      <!-- End Client Item -->
-
-      <div class="col-xl-2 col-md-3 col-6 client-logo">
-        <img src="img/clients/client-6.png" class="img-fluid" alt="" />
+        <img src="img/remove.jpg" class="img-fluid" alt="" />
       </div>
       <!-- End Client Item -->
     </div>
@@ -722,16 +622,6 @@
         >
           <i class="bi bi-brightness-high"></i>
           <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
-        </a>
-      </li>
-      <li class="nav-item col-3">
-        <a
-          class="nav-link"
-          data-bs-toggle="tab"
-          data-bs-target="#features-tab-4"
-        >
-          <i class="bi bi-command"></i>
-          <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
         </a>
       </li>
     </ul>
@@ -782,7 +672,7 @@
             </p>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="img/hero.jpg" alt="" class="img-fluid" />
+            <img src="img/remove.jpg" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -839,7 +729,7 @@
             </ul>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="img/hero.jpg" alt="" class="img-fluid" />
+            <img src="img/remove.jpg" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -887,57 +777,7 @@
             </p>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="img/hero.jpg" alt="" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-      <!-- End Tab Content Item -->
-
-      <div class="tab-pane fade" id="features-tab-4">
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-            <h3>
-              Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore
-              rerum
-            </h3>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-              irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est
-              laborum
-            </p>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-check2-all"></i>
-                <span
-                  >Ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</span
-                >
-              </li>
-              <li>
-                <i class="bi bi-check2-all"></i>
-                <span
-                  >Duis aute irure dolor in reprehenderit in voluptate
-                  velit.</span
-                >
-              </li>
-              <li>
-                <i class="bi bi-check2-all"></i>
-                <span
-                  >Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                  aute irure dolor in reprehenderit in voluptate trideta
-                  storacalaperda mastiro dolore eu fugiat nulla pariatur.</span
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2 text-center">
-            <img src="img/hero.jpg" alt="" class="img-fluid" />
+            <img src="img/remove.jpg" alt="" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -976,7 +816,7 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="img/hero.jpg" class="testimonial-img" alt="" />
+            <img src="img/remove.jpg" class="testimonial-img" alt="" />
             <h3>Saul Goodman</h3>
             <h4>Ceo &amp; Founder</h4>
             <div class="stars">
@@ -1000,7 +840,7 @@
 
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="img/hero.jpg" class="testimonial-img" alt="" />
+            <img src="img/remove.jpg" class="testimonial-img" alt="" />
             <h3>Sara Wilsson</h3>
             <h4>Designer</h4>
             <div class="stars">
@@ -1024,7 +864,7 @@
 
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="img/hero.jpg" class="testimonial-img" alt="" />
+            <img src="img/remove.jpg" class="testimonial-img" alt="" />
             <h3>Jena Karlis</h3>
             <h4>Store Owner</h4>
             <div class="stars">
@@ -1047,7 +887,7 @@
 
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="img/hero.jpg" class="testimonial-img" alt="" />
+            <img src="img/remove.jpg" class="testimonial-img" alt="" />
             <h3>Matt Brandon</h3>
             <h4>Freelancer</h4>
             <div class="stars">
@@ -1071,7 +911,7 @@
 
         <div class="swiper-slide">
           <div class="testimonial-item">
-            <img src="img/hero.jpg" class="testimonial-img" alt="" />
+            <img src="img/remove.jpg" class="testimonial-img" alt="" />
             <h3>John Larson</h3>
             <h4>Entrepreneur</h4>
             <div class="stars">
@@ -1135,13 +975,13 @@
       >
         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
           <div class="portfolio-content h-100">
-            <img src="img/portfolio/app-1.jpg" class="img-fluid" alt="" />
+            <img src="img/remove.jpg" class="img-fluid" alt="" />
 
             <div class="portfolio-info">
               <h4>App 1</h4>
               <p>Lorem ipsum, dolor sit amet consectetur</p>
               <a
-                href="img/portfolio/app-1.jpg"
+                href="img/remove.jpg"
                 title="App 1"
                 data-gallery="portfolio-gallery-app"
                 class="glightbox preview-link"

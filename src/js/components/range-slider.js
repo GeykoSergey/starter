@@ -17,8 +17,8 @@ if (slider) {
   const input1 = document.getElementById('input-1');
   const inputs = [input0, input1];
 
-  // handle - пердает либо 0 либо 1
-  // value - пердает либо 0 либо 1
+  // handle - перeдает либо 0 либо 1
+  // value - перeдает либо 0 либо 1
   slider.noUiSlider.on('update', function (values, handle) {
     // если мы двигаем первую полоску - управляй первым инпутом
     // если мы двигаем вторую полоску - управляй вторым инпутом
