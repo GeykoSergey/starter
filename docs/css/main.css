@@ -119,45 +119,6 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 768px) {
-  [data-aos-delay] {
-    -webkit-transition-delay: 0 !important;
-    transition-delay: 0 !important;
-  }
-}
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 50px;
-  overflow: clip;
-}
-
-@media (max-width: 1199px) {
-  section,
-  .section {
-    scroll-margin-top: 76px;
-  }
-}
-.page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 160px 0 80px 0;
-  text-align: center;
-  position: relative;
-}
-
-.page-title:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-}
-
 .section-title {
   padding-bottom: 60px;
   position: relative;
@@ -198,183 +159,6 @@ section,
     font-size: 24px;
   }
 }
-.pulsating-play-btn {
-  width: 94px;
-  height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
-  border-radius: 50%;
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-.pulsating-play-btn:before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-  -webkit-animation: pulsate-play-btn 2s;
-  animation: pulsate-play-btn 2s;
-  -webkit-animation-direction: forwards;
-  animation-direction: forwards;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-timing-function: steps;
-  animation-timing-function: steps;
-  opacity: 1;
-  border-radius: 50%;
-  border: 5px solid color-mix(in srgb, var(--accent-color), transparent 30%);
-  top: -15%;
-  left: -15%;
-  background: rgba(198, 16, 0, 0);
-}
-
-.pulsating-play-btn:after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  -ms-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 100;
-  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.pulsating-play-btn:hover:before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-  -ms-transform: translateX(-40%) translateY(-50%);
-  transform: translateX(-40%) translateY(-50%);
-  width: 0;
-  height: 0;
-  border: none;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 15px solid #fff;
-  z-index: 200;
-  -webkit-animation: none;
-  animation: none;
-  border-radius: 0;
-}
-
-.pulsating-play-btn:hover:after {
-  border-left: 15px solid var(--accent-color);
-  -webkit-transform: scale(20);
-  -ms-transform: scale(20);
-  transform: scale(20);
-}
-
-@-webkit-keyframes pulsate-play-btn {
-  0% {
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-play-btn {
-  0% {
-    -webkit-transform: scale(0.6, 0.6);
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
-}
-
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1.5s linear infinite;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@-webkit-keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-preloader {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 999;
-  background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.scroll-top svg {
-  fill: #fff;
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-}
-
 .icon-btn-sm,
 .icon-btn-lg {
   padding: 0;
@@ -414,8 +198,6 @@ section,
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
   z-index: 997;
 }
 .header .nav-link,
@@ -521,16 +303,6 @@ section,
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg.navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .navbar-expand-lg.fixed-top {
-    position: fixed;
-  }
-  .navbar-expand-lg .navbar-nav .nav-item {
-    margin-bottom: 0;
-  }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -545,19 +317,8 @@ section,
   .navbar-expand-lg .dropdown-menu.show {
     display: none;
   }
-  .navbar-expand-lg .dropdown-menu > .dropdown > .dropdown-toggle {
-    position: relative;
-    padding-right: 1.95rem;
-  }
   .navbar-expand-lg .dropdown-menu > .dropdown > .dropdown-toggle:empty::after {
     margin-left: 0;
-  }
-  .navbar-expand-lg .dropdown-menu > .dropdown > .dropdown-toggle::after {
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 1rem;
-    margin-top: -0.3em;
   }
   .navbar-expand-lg .dropdown-menu > .dropdown .dropdown-menu {
     top: 0;
@@ -579,12 +340,6 @@ section,
     animation: slide-up 0.25s ease-in-out;
   }
 }
-.scrolled .header {
-  --background-color: rgba(21, 34, 43, 1);
-  -webkit-box-shadow: 0px 0 18px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.5);
-}
-
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
